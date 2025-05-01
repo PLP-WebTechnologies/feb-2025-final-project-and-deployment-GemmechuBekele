@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>ShopOnline - Products</title>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+    <header>
+        <h1>ShopOnline</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="all-products">
+            <h2>Products</h2>
+            <div class="products-grid">
+                <article class="product-card">
+                    <img src="images/smart-watch.avif" alt="Smart Watch" />
+                    <h3>Smart Watch</h3>
+                    <p>$149.99</p>
+                    <button onclick="addToCart(2, 'Smart Watch', 149.99)">Add to Cart</button>
+                </article>
+                <!-- Add more product cards here -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 ShopOnline. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

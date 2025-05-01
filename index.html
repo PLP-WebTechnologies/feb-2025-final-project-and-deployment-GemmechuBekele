@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>ShopOnline - Home</title>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+    <header>
+        <h1>ShopOnline</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Welcome to ShopOnline</h2>
+            <p>Your one-stop destination for quality products</p>
+        </section>
+
+        <section class="featured-products">
+            <h2>Featured Products</h2>
+            <div class="products-grid">
+               <article class="product-card">
+                  <div class="product-images">
+                     <img src="/images/Earbud-img1.webp" alt="Earbud 1" />
+                     <img src="/images/Earbud-img2.webp" alt="Earbud 2" />
+                     <img src="/images/Earbud-img3.webp" alt="Earbud 3" />
+                  </div>
+                  <h3>Wireless Headphones</h3>
+                  <p>$99.99</p>
+                  <button onclick="addToCart(1, 'Wireless Headphones', 99.99)">Add to Cart</button>
+               </article>
+
+                <!-- Add more featured products if needed -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 ShopOnline. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
